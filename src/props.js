@@ -63,6 +63,9 @@ export const propTypes = {
     }),
     twitch: shape({
       options: object
+    }),
+    vidyard: shape({
+      options: object
     })
   }),
   onReady: func,
@@ -157,6 +160,9 @@ export const defaultProps = {
       }
     },
     twitch: {
+      options: {}
+    },
+    vidyard: {
       options: {}
     }
   },

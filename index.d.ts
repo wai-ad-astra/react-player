@@ -46,6 +46,10 @@ export interface MixcloudConfig {
   options?: Object;
 }
 
+export interface VidyardConfig {
+  options?: Object;
+}
+
 export interface FileConfig {
   attributes?: Object;
   tracks?: TrackProps[];
@@ -67,6 +71,7 @@ export interface Config {
   file?: FileConfig;
   wistia?: WistiaConfig;
   mixcloud?: MixcloudConfig;
+  vidyard?: VidyardConfig;
 }
 
 export interface ReactPlayerProps {
