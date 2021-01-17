@@ -196,14 +196,14 @@ class App extends Component {
                     <button onClick={this.handleTogglePIP}>{pip ? 'Disable PiP' : 'Enable PiP'}</button>}
                 </td>
               </tr>
-              <tr>
-                <th>Speed</th>
-                <td>
-                  <button onClick={this.handleSetPlaybackRate} value={1}>1x</button>
-                  <button onClick={this.handleSetPlaybackRate} value={1.5}>1.5x</button>
-                  <button onClick={this.handleSetPlaybackRate} value={2}>2x</button>
-                </td>
-              </tr>
+              {/*<tr>*/}
+              {/*  <th>Speed</th>*/}
+              {/*  <td>*/}
+              {/*    <button onClick={this.handleSetPlaybackRate} value={1}>1x</button>*/}
+              {/*    <button onClick={this.handleSetPlaybackRate} value={1.5}>1.5x</button>*/}
+              {/*    <button onClick={this.handleSetPlaybackRate} value={2}>2x</button>*/}
+              {/*  </td>*/}
+              {/*</tr>*/}
               <tr>
                 <th>Seek</th>
                 <td>
@@ -231,38 +231,38 @@ class App extends Component {
                   <em>&nbsp; Requires player reload</em>
                 </td>
               </tr>
-              <tr>
-                <th>
-                  <label htmlFor='muted'>Muted</label>
-                </th>
-                <td>
-                  <input id='muted' type='checkbox' checked={muted} onChange={this.handleToggleMuted} />
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <label htmlFor='loop'>Loop</label>
-                </th>
-                <td>
-                  <input id='loop' type='checkbox' checked={loop} onChange={this.handleToggleLoop} />
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <label htmlFor='light'>Light mode</label>
-                </th>
-                <td>
-                  <input id='light' type='checkbox' checked={light} onChange={this.handleToggleLight} />
-                </td>
-              </tr>
-              <tr>
-                <th>Played</th>
-                <td><progress max={1} value={played} /></td>
-              </tr>
-              <tr>
-                <th>Loaded</th>
-                <td><progress max={1} value={loaded} /></td>
-              </tr>
+              {/*<tr>*/}
+              {/*  <th>*/}
+              {/*    <label htmlFor='muted'>Muted</label>*/}
+              {/*  </th>*/}
+              {/*  <td>*/}
+              {/*    <input id='muted' type='checkbox' checked={muted} onChange={this.handleToggleMuted} />*/}
+              {/*  </td>*/}
+              {/*</tr>*/}
+              {/*<tr>*/}
+              {/*  <th>*/}
+              {/*    <label htmlFor='loop'>Loop</label>*/}
+              {/*  </th>*/}
+              {/*  <td>*/}
+              {/*    <input id='loop' type='checkbox' checked={loop} onChange={this.handleToggleLoop} />*/}
+              {/*  </td>*/}
+              {/*</tr>*/}
+              {/*<tr>*/}
+              {/*  <th>*/}
+              {/*    <label htmlFor='light'>Light mode</label>*/}
+              {/*  </th>*/}
+              {/*  <td>*/}
+              {/*    <input id='light' type='checkbox' checked={light} onChange={this.handleToggleLight} />*/}
+              {/*  </td>*/}
+              {/*</tr>*/}
+              {/*<tr>*/}
+              {/*  <th>Played</th>*/}
+              {/*  <td><progress max={1} value={played} /></td>*/}
+              {/*</tr>*/}
+              {/*<tr>*/}
+              {/*  <th>Loaded</th>*/}
+              {/*  <td><progress max={1} value={loaded} /></td>*/}
+              {/*</tr>*/}
             </tbody>
           </table>
         </section>
@@ -277,71 +277,71 @@ class App extends Component {
                   {this.renderLoadButton('https://www.youtube.com/playlist?list=PLogRWNZ498ETeQNYrOlqikEML3bKJcdcx', 'Playlist')}
                 </td>
               </tr>
-              <tr>
-                <th>SoundCloud</th>
-                <td>
-                  {this.renderLoadButton('https://soundcloud.com/miami-nights-1984/accelerated', 'Test A')}
-                  {this.renderLoadButton('https://soundcloud.com/tycho/tycho-awake', 'Test B')}
-                </td>
-              </tr>
-              <tr>
-                <th>Facebook</th>
-                <td>
-                  {this.renderLoadButton('https://www.facebook.com/facebook/videos/10153231379946729/', 'Test A')}
-                  {this.renderLoadButton('https://www.facebook.com/FacebookDevelopers/videos/10152454700553553/', 'Test B')}
-                </td>
-              </tr>
-              <tr>
-                <th>Vimeo</th>
-                <td>
-                  {this.renderLoadButton('https://vimeo.com/90509568', 'Test A')}
-                  {this.renderLoadButton('https://vimeo.com/169599296', 'Test B')}
-                </td>
-              </tr>
-              <tr>
-                <th>Twitch</th>
-                <td>
-                  {this.renderLoadButton('https://www.twitch.tv/videos/106400740', 'Test A')}
-                  {this.renderLoadButton('https://www.twitch.tv/videos/12783852', 'Test B')}
-                  {this.renderLoadButton('https://www.twitch.tv/kronovi', 'Test C')}
-                </td>
-              </tr>
-              <tr>
-                <th>Streamable</th>
-                <td>
-                  {this.renderLoadButton('https://streamable.com/moo', 'Test A')}
-                  {this.renderLoadButton('https://streamable.com/ifjh', 'Test B')}
-                </td>
-              </tr>
-              <tr>
-                <th>Wistia</th>
-                <td>
-                  {this.renderLoadButton('https://home.wistia.com/medias/e4a27b971d', 'Test A')}
-                  {this.renderLoadButton('https://home.wistia.com/medias/29b0fbf547', 'Test B')}
-                  {this.renderLoadButton('https://home.wistia.com/medias/bq6epni33s', 'Test C')}
-                </td>
-              </tr>
-              <tr>
-                <th>DailyMotion</th>
-                <td>
-                  {this.renderLoadButton('https://www.dailymotion.com/video/x5e9eog', 'Test A')}
-                  {this.renderLoadButton('https://www.dailymotion.com/video/x61xx3z', 'Test B')}
-                </td>
-              </tr>
-              <tr>
-                <th>Mixcloud</th>
-                <td>
-                  {this.renderLoadButton('https://www.mixcloud.com/mixcloud/meet-the-curators/', 'Test A')}
-                  {this.renderLoadButton('https://www.mixcloud.com/mixcloud/mixcloud-curates-4-mary-anne-hobbs-in-conversation-with-dan-deacon/', 'Test B')}
-                </td>
-              </tr>
-              <tr>
-                <th>Vidyard</th>
-                <td>
-                  {this.renderLoadButton('https://video.vidyard.com/watch/YBvcF2BEfvKdowmfrRwk57', 'Test A')}
-                  {this.renderLoadButton('https://video.vidyard.com/watch/BLXgYCDGfwU62vdMWybNVJ', 'Test B')}
-                </td>
-              </tr>
+              {/*<tr>*/}
+              {/*  <th>SoundCloud</th>*/}
+              {/*  <td>*/}
+              {/*    {this.renderLoadButton('https://soundcloud.com/miami-nights-1984/accelerated', 'Test A')}*/}
+              {/*    {this.renderLoadButton('https://soundcloud.com/tycho/tycho-awake', 'Test B')}*/}
+              {/*  </td>*/}
+              {/*</tr>*/}
+              {/*<tr>*/}
+              {/*  <th>Facebook</th>*/}
+              {/*  <td>*/}
+              {/*    {this.renderLoadButton('https://www.facebook.com/facebook/videos/10153231379946729/', 'Test A')}*/}
+              {/*    {this.renderLoadButton('https://www.facebook.com/FacebookDevelopers/videos/10152454700553553/', 'Test B')}*/}
+              {/*  </td>*/}
+              {/*</tr>*/}
+              {/*<tr>*/}
+              {/*  <th>Vimeo</th>*/}
+              {/*  <td>*/}
+              {/*    {this.renderLoadButton('https://vimeo.com/90509568', 'Test A')}*/}
+              {/*    {this.renderLoadButton('https://vimeo.com/169599296', 'Test B')}*/}
+              {/*  </td>*/}
+              {/*</tr>*/}
+              {/*<tr>*/}
+              {/*  <th>Twitch</th>*/}
+              {/*  <td>*/}
+              {/*    {this.renderLoadButton('https://www.twitch.tv/videos/106400740', 'Test A')}*/}
+              {/*    {this.renderLoadButton('https://www.twitch.tv/videos/12783852', 'Test B')}*/}
+              {/*    {this.renderLoadButton('https://www.twitch.tv/kronovi', 'Test C')}*/}
+              {/*  </td>*/}
+              {/*</tr>*/}
+              {/*<tr>*/}
+              {/*  <th>Streamable</th>*/}
+              {/*  <td>*/}
+              {/*    {this.renderLoadButton('https://streamable.com/moo', 'Test A')}*/}
+              {/*    {this.renderLoadButton('https://streamable.com/ifjh', 'Test B')}*/}
+              {/*  </td>*/}
+              {/*</tr>*/}
+              {/*<tr>*/}
+              {/*  <th>Wistia</th>*/}
+              {/*  <td>*/}
+              {/*    {this.renderLoadButton('https://home.wistia.com/medias/e4a27b971d', 'Test A')}*/}
+              {/*    {this.renderLoadButton('https://home.wistia.com/medias/29b0fbf547', 'Test B')}*/}
+              {/*    {this.renderLoadButton('https://home.wistia.com/medias/bq6epni33s', 'Test C')}*/}
+              {/*  </td>*/}
+              {/*</tr>*/}
+              {/*<tr>*/}
+              {/*  <th>DailyMotion</th>*/}
+              {/*  <td>*/}
+              {/*    {this.renderLoadButton('https://www.dailymotion.com/video/x5e9eog', 'Test A')}*/}
+              {/*    {this.renderLoadButton('https://www.dailymotion.com/video/x61xx3z', 'Test B')}*/}
+              {/*  </td>*/}
+              {/*</tr>*/}
+              {/*<tr>*/}
+              {/*  <th>Mixcloud</th>*/}
+              {/*  <td>*/}
+              {/*    {this.renderLoadButton('https://www.mixcloud.com/mixcloud/meet-the-curators/', 'Test A')}*/}
+              {/*    {this.renderLoadButton('https://www.mixcloud.com/mixcloud/mixcloud-curates-4-mary-anne-hobbs-in-conversation-with-dan-deacon/', 'Test B')}*/}
+              {/*  </td>*/}
+              {/*</tr>*/}
+              {/*<tr>*/}
+              {/*  <th>Vidyard</th>*/}
+              {/*  <td>*/}
+              {/*    {this.renderLoadButton('https://video.vidyard.com/watch/YBvcF2BEfvKdowmfrRwk57', 'Test A')}*/}
+              {/*    {this.renderLoadButton('https://video.vidyard.com/watch/BLXgYCDGfwU62vdMWybNVJ', 'Test B')}*/}
+              {/*  </td>*/}
+              {/*</tr>*/}
               <tr>
                 <th>Files</th>
                 <td>
@@ -405,13 +405,13 @@ class App extends Component {
             </tbody>
           </table>
         </section>
-        <footer className='footer'>
-          Version <strong>{version}</strong>
-          {SEPARATOR}
-          <a href='https://github.com/CookPete/react-player'>GitHub</a>
-          {SEPARATOR}
-          <a href='https://www.npmjs.com/package/react-player'>npm</a>
-        </footer>
+        {/*<footer className='footer'>*/}
+        {/*  Version <strong>{version}</strong>*/}
+        {/*  {SEPARATOR}*/}
+        {/*  <a href='https://github.com/CookPete/react-player'>GitHub</a>*/}
+        {/*  {SEPARATOR}*/}
+        {/*  <a href='https://www.npmjs.com/package/react-player'>npm</a>*/}
+        {/*</footer>*/}
       </div>
     )
   }
